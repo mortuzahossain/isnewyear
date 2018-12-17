@@ -1,31 +1,19 @@
-<?php
-    $ip         = $_SERVER['REMOTE_ADDR'];
-    $hostName   = gethostbyaddr($ip);
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your IP Address</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <title>isnewyear</title>
+    <link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link rel="stylesheet" type="text/css" href="static/responsive.css">
 </head>
 <body>
 
 <div class="container text-center allcenter">
-    <h1>Your IP Address</h1>
-    <h2>
-        <?php
-            echo $ip;
-        ?>
-    </h2>
-    <h1>Your Host Name</h1>
-    <h2>
-        <?php
-            echo $hostName;
-        ?>
-    </h2>
+    {% if new_year %}
+    <h1>Yeah!!! It is new Year</h1>
+    {% else %}
+    <h1>): NO :(</h1>
+    {% endif %}
 </div>
 
 
