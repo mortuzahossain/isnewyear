@@ -1,0 +1,37 @@
+<?php
+    $ip         = $_SERVER['REMOTE_ADDR'];
+    $hostName   = gethostbyaddr($ip);
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your IP Address</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+</head>
+<body>
+
+<div class="container text-center allcenter">
+    <h1>Your IP Address</h1>
+    <h2>
+        <?php
+            echo $ip;
+        ?>
+    </h2>
+    <h1>Your Host Name</h1>
+    <h2>
+        <?php
+            echo $hostName;
+        ?>
+    </h2>
+</div>
+
+
+<div class="fixed-bottom container text-center">
+    <p>This Program is written By : <a href="http://www.facebook.com/md.mortuza.hossain/">Mortuza Hossain</a></p>
+</div>
+
+</body>
+</html>
