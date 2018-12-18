@@ -10,6 +10,6 @@ def index():
     # newYear = True
     return render_template('index.html',new_year = newYear)
 
-if __name__ == '__main__':
-    app.run(debug = True,port = 3030)
+#if __name__ == '__main__':
+#    app.run(debug = True,port = 3030)
 
